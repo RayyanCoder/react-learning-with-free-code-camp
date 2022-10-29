@@ -43,8 +43,8 @@ export default function Hero() {
         </div>
         <section className="section-content">
         <h1>Online Experiences</h1>
-        <p>Join uniqure interaction activities led by one-of-a-kind <br></br>
-           hosts-all without leaving home.</p>
+        <p>Join uniqure interaction activities led by <br></br>one-of-a-kind
+           hosts-all without leaving <br></br> home.</p>
         </section>
       </div>
 

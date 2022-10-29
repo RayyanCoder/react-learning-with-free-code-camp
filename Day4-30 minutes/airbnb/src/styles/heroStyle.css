@@ -78,12 +78,18 @@
     font-weight: 600;
     font-family: 'Inter', sans-serif;
     font-size: 36px;
+    color: #222222;
+    margin-bottom: 0px;
+
 }
 
 .section-content p{
+    margin-top: 10px;
     font-weight: 300;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 25px;
     line-height: 17.6px;
+    color: #222222;
+    line-height: 110%;
 }
 
