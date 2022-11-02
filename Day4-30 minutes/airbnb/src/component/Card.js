@@ -10,21 +10,20 @@ export default function Card(props){
                 <div className='card-image'>
                     {props.cardImage},{props.starImage}
                     <div>
-                       <img className='suwming' src={swimmer}></img>
+                       <img className='suwming' src={props.coverImage}></img>
                     </div>
                     <div>
                        <img className='star1' src={star1}></img>
-                       <label className='ratings'>5.0</label>
-                       <label className='rating-count'>(50)</label>
-                       <label className='country'>US</label>
+                       <label className='ratings'>{props.status.raitng }</label>
+                       <label className='rating-count'> { props.status.reviewCount}</label>
+                       <label className='country'> { props.location}</label>
                     </div>
                     <div>
-                    <label className='card-txt'>Life lessons with Katie Zaferes</label>
+                    <label className='card-txt'>{props.title}</label>
                     </div>
                     <div>
-                      <label className='card-price'>  From $136 / person</label>
+                      <label className='card-price'>  From ${props.price} / person</label>
                     </div>
-                     <p> This is a card component</p>
                 </div>
 
                 </div>
