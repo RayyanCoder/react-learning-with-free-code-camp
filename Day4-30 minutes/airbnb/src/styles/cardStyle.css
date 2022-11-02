@@ -1,0 +1,36 @@
+.suwming{
+    /* position: relative; */
+    width: 176px;
+    height: 235px;
+    left: 37px;
+    /* top: 20px; */
+    border-radius: 9px;
+}
+.star1{
+/* position: absolute; */
+width: 14px;
+height: 14px;
+left: 230px;
+/* top: 765px; */
+/* border-radius: 0.5px; */
+}
+.card-image{
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+.card-txt{
+   font-family: 'Poppins';
+   font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+}
+.card-price{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 110%;
+}

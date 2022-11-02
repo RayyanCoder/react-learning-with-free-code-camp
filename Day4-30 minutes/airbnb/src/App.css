@@ -4,3 +4,8 @@
 body{
   margin: 0;
 }
+.card-app{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
