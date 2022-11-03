@@ -1,0 +1,28 @@
+.navbar-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 65px;
+background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+.navbar-logo{
+    position: absolute;
+    left: 20px;
+    top: 19px;
+    width: 178.79px;
+    height: 26.22px;
+    
+}
+.navbar-details{
+width: 189px;
+height: 14px;
+padding-right: 50px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+text-align: right;
+color: #FFFFFF;
+}
