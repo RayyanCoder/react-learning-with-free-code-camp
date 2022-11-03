@@ -13,7 +13,7 @@ export default  [
       reviewCount:`(${50})`,
     },
     location: "online",
-    openSports: 27,
+    openSports: 0,
   },
 
   {

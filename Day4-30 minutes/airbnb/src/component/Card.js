@@ -5,10 +5,18 @@ import star1 from './../images/card/Star 1.png';
 import './../styles/cardStyle.css'
 
 export default function Card(props){
+    let bage="AVALIABLE";
+    if(props.openSports == 0){
+      bage="SOLD OUT";
+  }
+
         return(
             <div>
+              <div className='bage'>
+                {bage}
+              </div>
                 <div className='card-image'>
-                    {props.cardImage},{props.starImage}
+                    {props.cardImage},{props.starI}
                     <div>
                        <img className='suwming' src={props.coverImage}></img>
                     </div>
@@ -27,7 +35,7 @@ export default function Card(props){
                 </div>
 
                 </div>
-           
+  
                
           
         )

@@ -35,3 +35,16 @@ font-size: 12px;
 line-height: 110%;
 margin-bottom: 40px;
 }
+.bage{
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    color: #fff;
+    background-color: #1fb0df;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 110px;
+
+}

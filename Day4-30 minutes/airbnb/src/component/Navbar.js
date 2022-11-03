@@ -5,7 +5,7 @@ import airnbn from './../images/Vector.png';
 
 export default function Navbar(){
     return(
-       <nav>
+       <nav className=''>
         <img className= "nav--logo"src={airnbn} alt='Airbnb'/>
        </nav>
     )

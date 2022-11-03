@@ -5,6 +5,7 @@
     margin: 0;
   }
   nav{
+    position:sticky;
     height: 70px;
     display: flex;
     background-color: white;
