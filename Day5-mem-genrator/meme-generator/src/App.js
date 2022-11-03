@@ -8,7 +8,6 @@ function App() {
     <div>
       <Navbar></Navbar>
       <Meme/>
-      My name is rayyan shaikh abdul majid
     </div>
   );
 }
