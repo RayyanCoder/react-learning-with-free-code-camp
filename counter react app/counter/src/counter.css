@@ -1,0 +1,58 @@
+.count{
+
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    font-size: 15px;
+    color: black;
+    border-radius: 100px;
+}
+.count span{
+    color: white;
+}
+.increment{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(83, 81, 81);
+    font-size: 15px;
+    color: white;
+    border-radius: 100px;
+    margin-left: 220px;
+    margin-top: 100px;
+}
+.decrement{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(83, 81, 81);
+    font-size: 15px;
+    color: white;
+    border-radius: 100px;
+    margin-right: 220px;
+    margin-top: 100px;
+}
+.decrement h3{
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 24px;
+}
+.increment h3{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-left: 35px;
+}
+.main-counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+body{
+    background-color: black;
+}
+h1{
+    margin-left: 80px;
+    margin-top: 80px;
+}
