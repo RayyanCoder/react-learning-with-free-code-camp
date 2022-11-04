@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Countchild  from './Countchild';
 import './counter.css';
 
 export default function Counterss(){
@@ -26,7 +27,9 @@ export default function Counterss(){
             <h3>-</h3>
             </div>
        </div>
-  
+            <Countchild
+            count={getCount}
+            />
     </div>
     );
   
