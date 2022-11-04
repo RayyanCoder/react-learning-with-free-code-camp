@@ -10,12 +10,23 @@ import memes2 from './memeData';
 export default function Meme(){
     let [imgUrl,setImageUrl] = React.useState("https://i.imgflip.com/1bij.jpg");
     console.log(imgUrl);
+    const [getMeme ,setMeme1]=React.useState({
+        topText:"",
+        bottomText:"",
+        randomImage:imgUrl
+    });
+
+    const [getAllMemeImages,setAllMemeImages] = React.useState(memes2);
     function display(){
        console.log(memes2,typeof memes2);
        const RandomNumber = Math.floor(Math.random()*2);
        console.log(memes2.data.memes[RandomNumber].url);
        imgUrl = memes2.data.memes[RandomNumber].url;
        setImageUrl(imgUrl);
+       setMeme1(previouse1=>({
+            ...previouse1,
+            randomImage:imgUrl
+       }));
     }
     return(
 
@@ -24,10 +35,10 @@ export default function Meme(){
             <div>
                 <div className='meme-input-container'>
                     <div>    
-                        <input className='first-input' type="text"></input>
+                        <input placeholder='top-text' className='first-input' type="text"></input>
                     </div>
                     <div>         
-                       <input className='second-input' type="text"></input>
+                       <input placeholder='bottom-text' className='second-input' type="text"></input>
                     </div>
                     <button className='meme-btn' onClick={display}  type='button'>
                        <span><img className='btn-image' src={btnlog}></img></span> 
@@ -35,7 +46,7 @@ export default function Meme(){
                 </div>
             </div>
             </form>
-            <img className='joke-image' src={imgUrl}></img>
+            <img className='joke-image' src={getMeme.randomImage}></img>
         </div>
     );
 }
