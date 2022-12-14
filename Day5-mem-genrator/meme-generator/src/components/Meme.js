@@ -16,6 +16,10 @@ export default function Meme(){
         randomImage:imgUrl
     });
 
+    React.useEffect(async()=>{
+      await fetch("https://i.imgflip.com/get memes").then(data=>data.json()).then(data2=>console.log("getting data from api",data2));
+    },[]);
+
     const [getAllMemeImages,setAllMemeImages] = React.useState(memes2);
     function display(){
        console.log(memes2,typeof memes2);
@@ -28,6 +32,19 @@ export default function Meme(){
             randomImage:imgUrl
        }));
     }
+
+    function handleChange(event){
+        const {name,value,type,checked} = event.target;
+        setMeme1((previouse)=>{
+            return{
+                ...previouse,
+                [name]:type === 'checkbox'? checked:value
+            }
+        });
+
+         console.log(getMeme);
+
+    }
     return(
 
         <div >
@@ -35,10 +52,22 @@ export default function Meme(){
             <div>
                 <div className='meme-input-container'>
                     <div>    
-                        <input placeholder='top-text' className='first-input' type="text"></input>
+                        <input placeholder='top-text'
+                         className='first-input' 
+                         type="text"
+                         value={getMeme.topText}
+                         onChange={handleChange}
+                         name="topText"
+                         ></input>
                     </div>
                     <div>         
-                       <input placeholder='bottom-text' className='second-input' type="text"></input>
+                       <input placeholder='bottom-text'
+                        className='second-input'
+                         type="text"
+                         value={getMeme.bottomText}
+                         onChange={handleChange}
+                         name="bottomText"
+                         ></input>
                     </div>
                     <button className='meme-btn' onClick={display}  type='button'>
                        <span><img className='btn-image' src={btnlog}></img></span> 
@@ -46,7 +75,11 @@ export default function Meme(){
                 </div>
             </div>
             </form>
+            <div>
             <img className='joke-image' src={getMeme.randomImage}></img>
+            
+            </div>
+         
         </div>
     );
 }
